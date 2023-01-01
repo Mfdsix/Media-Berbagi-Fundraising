@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /node_modules
 /public/hot
 /public/storage
@@ -23,7 +22,6 @@ resources/views/themes/*
 themes/*
 database/seeds/ProjecCategoriesSeeder.php
 database/seeds/ProjectSeeder.php
-=======
 /vendor/
 node_modules/
 npm-debug.log
@@ -47,4 +45,3 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
->>>>>>> f545ae3da6bb0f3a2d80348b39bf76ad5741a67e
