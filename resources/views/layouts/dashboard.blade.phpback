@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>@yield('title', envdb('APP_NAME'))</title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+
+  <!-- Fonts and icons -->
+  <script src="{{ asset('assets/js/plugin/webfont/webfont.min.js') }}"></script>
+  <script>
+    WebFont.load({
+      google: {
+        "families": ["Lato:300,400,700,900"]
+      },
+      custom: {
+        "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"],
+        urls: ['{{ asset("assets/css/fonts.min.css") }}']
+      },
+      active: function() {
+        sessionStorage.fonts = true;
+      }
+    });
+  </script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/atlantis.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/variable.css') }}">
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}">
+  <link href="{{ asset('plugins/datapicker/datepicker3.css') }}" rel="stylesheet">
+  <style type="text/css">
+    .table tr td {
+      text-align: left;
+    }
+
+    .logo-header[data-background-color=blue] {
+      background: var(--primary) !important;
+    }
+
+    .navbar-header[data-background-color=blue2] {
+      background: var(--primary) !important;
+    }
+
+    .bg-primary-gradient {
+      background: var(--primary) !important;
+    }
+
+    .sidebar.sidebar-style-2 .nav.nav-primary>.nav-item.active>a {
+      background: var(--primary) !important;
+    }
+  </style>
+
+  @yield('css')
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main-header">
+      <!-- Logo Header -->
+      <div class="logo-header" data-background-color="blue">
+        <a href="{{ url('/') }}" class="logo text-white">
+          @if (isset($web_set->title))
+          {{ $web_set->title }}
+          @else
+              FORFUND
+          @endif
+        </a>
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="icon-menu"></i>
+          </span>
+        </button>
+        <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+        <div class="nav-toggle">
+          <button class="btn btn-toggle toggle-sidebar">
+            <i class="icon-menu"></i>
+          </button>
+        </div>
+      </div>
+      <!-- End Logo Header -->
+
+      <!-- Navbar Header -->
+      <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+
+        <div class="container-fluid">
+          <div class="collapse" id="search-nav">
+          </div>
+          <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+            <li class="nav-item dropdown hidden-caret">
+              <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                <div class="avatar-sm">
+                  <img src="{{ asset('images/person.png') }}" alt="..." class="avatar-img rounded-circle">
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-user animated fadeIn">
+                <div class="dropdown-user-scroll scrollbar-outer">
+                  <li>
+                    <div class="user-box">
+                      <div class="avatar-lg"><img src="{{ asset('images/person.png') }}" alt="image profile" class="avatar-img rounded"></div>
+                      <div class="u-text">
+                        <h4>{{ auth()->user()->name }}</h4>
+                        <p class="text-muted">{{ auth()->user()->email }}</p><a href="{{ url(auth()->user()->level.'/profile') }}" class="btn btn-xs btn-secondary btn-sm">Profil Saya</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" onclick="$('#form-logout').submit()">Logout</a>
+                    <form method="post" id="form-logout" action="{{ route('logout') }}" style="display: none;">
+                      @csrf
+                    </form>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar sidebar-style-2">
+      <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+          <div class="user">
+            <div class="avatar-sm float-left mr-2">
+              <img src="{{ asset('images/person.png') }}" alt="..." class="avatar-img rounded-circle">
+            </div>
+            <div class="info">
+              <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                <span>
+                  {{ auth()->user()->name }}
+                  <span class="user-level">{{ ucwords(strtolower(auth()->user()->level)) }}</span>
+                  <span class="caret"></span>
+                </span>
+              </a>
+              <div class="clearfix"></div>
+
+            </div>
+          </div>
+          <ul class="nav nav-primary">
+            @include('menu.'.auth()->user()->level)
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="main-panel">
+      <div class="content">
+        <div class="panel-header bg-primary">
+          <div class="page-inner py-5">
+            <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+              @yield('header')
+            </div>
+          </div>
+        </div>
+        <div class="page-inner mt--5">
+          @yield('content')
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="pull-left">
+          </nav>
+          <div class="copyright ml-auto">
+            Contribution by: <a href="http://digyta.net/">Digital Agency Nusantara <i class="fa fa-heart heart text-danger"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+  <!--   Core JS Files   -->
+  <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js') }}"></script>
+  <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
+  <script src="{{ asset('assets/js/core/bootstrap.min.js') }}"></script>
+
+  <!-- Chart -->
+  <script src="{{ asset('vendor/Chart.bundle.min.js') }}"></script>
+  <script src="{{ asset('vendor/chartjs-plugin-datalabels.js') }}"></script>
+  <script src="{{ asset('assets/js/chart.js') }}"></script>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="{{ asset('assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
+
+  <!-- jQuery Scrollbar -->
+  <script src="{{ asset('assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
+
+
+  <!-- Chart JS -->
+  <script src="{{ asset('assets/js/plugin/chart.js/chart.min.js') }}"></script>
+
+  <!-- jQuery Sparkline -->
+  <script src="{{ asset('assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
+
+  <!-- Chart Circle -->
+  <script src="{{ asset('assets/js/plugin/chart-circle/circles.min.js') }}"></script>
+
+  <!-- Datatables -->
+  <script src="{{ asset('assets/js/plugin/datatables/datatables.min.js') }}"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="{{ asset('assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+
+  <!-- jQuery Vector Maps -->
+  <script src="{{ asset('assets/js/plugin/jqvmap/jquery.vmap.min.js') }}"></script>
+  <script src="{{ asset('assets/js/plugin/jqvmap/maps/jquery.vmap.world.js') }}"></script>
+
+  <!-- Sweet Alert -->
+  <script src="{{ asset('assets/js/plugin/sweetalert/sweetalert.min.js') }}"></script>
+
+  <!-- Atlantis JS -->
+  <script src="{{ asset('assets/js/atlantis.min.js') }}"></script>
+
+  <!-- Atlantis DEMO methods, don't include it in your project! -->
+  <script src="{{ asset('assets/js/setting-demo.js') }}"></script>
+  <script src="{{ asset('plugins/datapicker/bootstrap-datepicker.js') }}"></script>
+  <script>
+    $(document).ready(function() {
+      $(".tanggalpicker").datepicker({
+        todayBtn: "linked",
+        keyboardNavigation: false,
+        forceParse: false,
+        autoclose: true,
+        format: "mm/dd/yyyy"
+      });
+
+      $(".rupiah").on("keyup", function() {
+        $(this).val(convertToRupiah($(this).val()));
+      });
+    });
+
+    function convertToRupiah(angka) {
+      var number_string = angka.replace(/\./g, '').toString(),
+        split = number_string.split(','),
+        sisa = split[0].length % 3,
+        rupiah = split[0].substr(0, sisa),
+        ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+      if (ribuan) {
+        separator = sisa ? '.' : '';
+        rupiah += separator + ribuan.join('.');
+      }
+
+      rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+      return rupiah;
+    }
+  </script>
+  @yield('js')
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+[
+    {
+      "title": "Card",
+      "code": "CARD",
+      "type": "CARD",
+      "icon": "https://js.durianpay.id/assets/img_credit-card.svg"
+    },
+    {
+      "title": "OVO",
+      "code": "OVO",
+      "type": "EWALLET",
+      "icon": "ovo.png"
+    },
+    {
+      "title": "Alfamart",
+      "code": "ALFAMART",
+      "type": "RETAILSTORE",
+      "icon": "alfamart.png"
+    },
+    {
+      "title": "Jenius Pay",
+      "code": "JENIUSPAY",
+      "type": "ONLINE_BANKING",
+      "icon": "jenius.svg"
+    },
+    {
+      "title": "LinkAja",
+      "code": "LINKAJA",
+      "type": "EWALLET",
+      "icon": "linkaja.png"
+    },
+    {
+      "title": "ShopeePay",
+      "code": "SHOPEEPAY",
+      "type": "EWALLET",
+      "icon": "shopeepay.png"
+    },
+    {
+      "title": "Indomaret",
+      "code": "INDOMARET",
+      "type": "RETAILSTORE",
+      "icon": "indomart.png"
+    },
+    {
+      "title": "QRIS",
+      "code": "QRIS",
+      "type": "QRIS",
+      "icon": "qris.png"
+    },
+    {
+      "title": "Other Banks",
+      "code": "OTHERS",
+      "type": "VA",
+      "icon": "transfer-bank.svg"
+    },
+    {
+      "title": "BCA",
+      "code": "BCA",
+      "type": "VA",
+      "icon": "bca.png"
+    },
+    {
+      "title": "OCTO Cash by CIMB Niaga",
+      "code": "DD_CIMB",
+      "type": "DIRECTDEBIT",
+      "icon": "octo-clicks.png"
+    },
+    {
+      "title": "BNI",
+      "code": "BNI",
+      "type": "VA",
+      "icon": "bni.png"
+    },
+    {
+      "title": "Permata",
+      "code": "PERMATA",
+      "type": "VA",
+      "icon": "permata.png"
+    },
+    {
+      "title": "BRI Direct Debit",
+      "code": "DD_BRI",
+      "type": "DIRECTDEBIT",
+      "icon": "bri.png"
+    },
+    {
+      "title": "BRI",
+      "code": "BRI",
+      "type": "VA",
+      "icon": "bri.png"
+    },
+    {
+      "title": "DANA",
+      "code": "DANA",
+      "type": "EWALLET",
+      "icon": "dana.png"
+    },
+    {
+      "title": "Mandiri",
+      "code": "MANDIRI",
+      "type": "VA",
+      "icon": "mandiri.png"
+    }
+  ]
