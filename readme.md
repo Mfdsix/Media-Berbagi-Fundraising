@@ -1,117 +1,25 @@
 # ![Media Berbagi Crowdfunding](https://mediaberbagi.id/front/assets/images/logo.png)
 
-> Open Source Crowdfunding for Social 
+Media Berbagi TM
+
+Mediaberbagi merupakan Open Source Crowdfunding untuk yayasan, lembaga, dan komunitas untuk dapat menggalang dana secara mandiri. Diplopori oleh yayasan media berbagi dengan berbagai dukungan para programmer dan donatur yang memberikan investasi akhiratnya untuk program Open source project berupa harta atau ilmu.
+
+Dalam program open source project, kami akan mengembangkan berbagai produk digital yang dapat dimanfaatkan dimanfaatkan secara umum tanpa harus membeli atau berlangganan sistem. Motivasi terbesar kami dalam program ini adalah bagaimana produk-produk digital yang akan kami buat dapat digunakan dan memberi manfaat sehingga pahala yang didapat terus mengalir tanpa henti sehingga bermanfaat bagi para programmer dan donatur yang telah ikut berkontribusi.
 
 [![github release version](https://img.shields.io/github/v/release/nhn/tui.editor.svg?include_prereleases)](https://github.com/nhn/tui.editor/releases/latest) [![npm version](https://img.shields.io/npm/v/@toast-ui/editor.svg)](https://www.npmjs.com/package/@toast-ui/editor) [![license](https://img.shields.io/github/license/nhn/tui.editor.svg)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.editor/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
 
 <img src="https://mediaberbagi.id/front/assets/images/header-image-2.png" />
 
 
-## 🚩 Table of Contents
+## 🚩 Syarat dan Ketentuan menggunakan Open Source Project
 
-- [Packages](#-packages)
-- [Why TOAST UI Editor?](#-why-toast-ui-editor)
-- [Features](#-features)
-- [Examples](#-examples)
-- [Browser Support](#-browser-support)
-- [Pull Request Steps](#-pull-request-steps)
-- [Contributing](#-contributing)
-- [TOAST UI Family](#-toast-ui-family)
-- [Used By](#-used-by)
-- [License](#-license)
+- Tidak diperkenankan untuk di komersilkan baik secara perorangan maupun lembaga
+- Pengguna diharapkan bisa berkontribusi ke program open source project dengan nilai yang tidak ditentukan untuk mendukung pengembangan sistem yang sustainable.
 
 
-## 📦 Packages
+## 📦 Cara penggunaan Media Berbagi Crowdfunding
 
-### TOAST UI Editor
-
-| Name | Description |
-| --- | --- |
-| [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) | Plain JavaScript component |
-
-### TOAST UI Editor's Wrappers
-
-| Name | Description |
-| --- | --- |
-| [`@toast-ui/react-editor`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | [React](https://reactjs.org/) wrapper component |
-| [`@toast-ui/vue-editor`](https://github.com/nhn/tui.editor/tree/master/apps/vue-editor) | [Vue](https://vuejs.org/) wrapper component |
-
-### TOAST UI Editor's Plugins
-
-| Name | Description |
-| --- | --- |
-| [`@toast-ui/editor-plugin-chart`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | Plugin to render chart |
-| [`@toast-ui/editor-plugin-code-syntax-highlight`](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) | Plugin to highlight code syntax |
-| [`@toast-ui/editor-plugin-color-syntax`](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) | Plugin to color editing text |
-| [`@toast-ui/editor-plugin-table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) | Plugin to merge table columns |
-| [`@toast-ui/editor-plugin-uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml) | Plugin to render UML |
-
-
-## 🤖 Why TOAST UI Editor?
-
-TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of *Markdown* or maybe to just edit the *Markdown*. The TOAST UI Editor can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
-
-### Productive Markdown Mode
-
-![markdown](https://user-images.githubusercontent.com/37766175/121464762-71e2fc80-c9ef-11eb-9a0a-7b06e08d3ccb.png)
-
-**CommonMark + GFM Specifications**
-
-Today *CommonMark* is the de-facto *Markdown* standard. *GFM (GitHub Flavored Markdown)* is another popular specification based on *CommonMark* - maintained by *GitHub*, which is the *Markdown* mostly used. TOAST UI Editor follows both [*CommonMark*](http://commonmark.org/) and [*GFM*](https://github.github.com/gfm/) specifications. Write documents with ease using productive tools provided by TOAST UI Editor and you can easily open the produced document wherever the specifications are supported.
-
-* **Live Preview** : Edit Markdown while keeping an eye on the rendered HTML. Your edits will be applied immediately.
-* **Scroll Sync** : Synchronous scrolling between Markdown and Preview. You don't need to scroll through each one separately.
-* **Syntax Highlight** : You can check broken Markdown syntax immediately.
-
-### Easy WYSIWYG Mode
-
-![wysiwyg](https://user-images.githubusercontent.com/37766175/121808381-251f5000-cc93-11eb-8c47-4f5a809de2b3.png)
-
-* **Table** : Through the context menu of the table, you can add or delete columns or rows of the table, and you can also arrange text in cells.
-* **Custom Block Editor** : The custom block area can be edited through the internal editor.
-* **Copy and Paste** : Paste anything from browser, screenshot, excel, powerpoint, etc.
-
-### UI
-* **Toolbar** : Through the toolbar, you can style or add elements to the document you are editing.
-![UI](https://user-images.githubusercontent.com/37766175/121808231-767b0f80-cc92-11eb-82a0-433123746982.png)
-
-* **Dark Theme** : You can use the dark theme.
-![UI](https://user-images.githubusercontent.com/37766175/121808649-8136a400-cc94-11eb-8674-812e170ccab5.png)
-
-### Use of Various Extended Functions - Plugins
-
-![plugin](https://user-images.githubusercontent.com/37766175/121808323-d8d41000-cc92-11eb-9117-b92a435c9b43.png)
-
-CommonMark and GFM are great, but we often need more abstraction. The TOAST UI Editor comes with powerful **Plugins** in compliance with the Markdown syntax.
-
-**Five basic plugins** are provided as follows, and can be downloaded and used with npm.
-
-* [**`chart`**](https://github.com/nhn/tui.editor/tree/master/plugins/chart) : A code block marked as a 'chart' will render [TOAST UI Chart](https://github.com/nhn/tui.chart).
-* [**`code-syntax-highlight`**](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) : Highlight the code block area corresponding to the language provided by [Prism.js](https://prismjs.com/).
-* [**`color-syntax`**](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) : 
-Using [TOAST UI ColorPicker](https://github.com/nhn/tui.color-picker), you can change the color of the editing text with the GUI.
-* [**`table-merged-cell`**](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) : 
-You can merge columns of the table header and body area.
-* [**`uml`**](https://github.com/nhn/tui.editor/tree/master/plugins/uml) : A code block marked as an 'uml' will render [UML diagrams](http://plantuml.com/screenshot).
-
-## 🎨 Features
-
-* [Viewer](https://github.com/nhn/tui.editor/tree/master/docs/en/viewer.md) : Supports a mode to display only markdown data without an editing area.
-* [Internationalization (i18n)](https://github.com/nhn/tui.editor/tree/master/docs/en/i18n.md) : Supports English, Dutch, Korean, Japanese, Chinese, Spanish, German, Russian, French, Ukrainian, Turkish, Finnish, Czech, Arabic, Polish, Galician, Swedish, Italian, Norwegian, Croatian + language and you can extend.
-* [Widget](https://github.com/nhn/tui.editor/tree/master/docs/en/widget.md) : This feature allows you to configure the rules that replaces the string matching to a specific `RegExp` with the widget node.
-* [Custom Block](https://github.com/nhn/tui.editor/tree/master/docs/en/custom-block.md) : Nodes not supported by Markdown can be defined through custom block. You can display the node what you want through writing the parsing logic with custom block.
-
-## 🐾 Examples
-
-* [Basic](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic)
-* [Viewer](https://nhn.github.io/tui.editor/latest/tutorial-example04-viewer)
-* [Using All Plugins](https://nhn.github.io/tui.editor/latest/tutorial-example12-editor-with-all-plugins)
-* [Creating the User's Plugin](https://nhn.github.io/tui.editor/latest/tutorial-example13-creating-plugin)
-* [Customizing the Toobar Buttons](https://nhn.github.io/tui.editor/latest/tutorial-example15-customizing-toolbar-buttons)
-* [Internationalization (i18n)](https://nhn.github.io/tui.editor/latest/tutorial-example16-i18n)
-
-Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic) and play with TOAST UI Editor!
-
+Anda dapat melihat video tutorial di youtube yang telah kami sediakan atau dapat menghubungi yayasan media berbagi untuk mendapatkan pelatihan penggunaan dan strategi crowdfunding digital.
 
 ## 🌏 Browser Support
 
