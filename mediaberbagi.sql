@@ -183,7 +183,7 @@ CREATE TABLE `configs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,6 +192,7 @@ CREATE TABLE `configs` (
 
 LOCK TABLES `configs` WRITE;
 /*!40000 ALTER TABLE `configs` DISABLE KEYS */;
+INSERT INTO `configs` VALUES (1,'MediaBerbagi',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'MediaBerbagi',NULL,NULL,NULL,'2023-04-07 07:35:52','2023-04-07 07:35:52');
 /*!40000 ALTER TABLE `configs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1009,7 +1010,7 @@ CREATE TABLE `settings` (
 
 LOCK TABLES `settings` WRITE;
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
-INSERT INTO `settings` VALUES (1,'donation_reminder','Bismillah..\n\nAssalaamualaikum Bapak/Ibu...\nSahabat-Surga\n\nTerima kasih telah berniat untuk investasi akhirat di <<app_name>>.\n\nKami hanya ingin mengingatkan niat baik Bapak/Ibu untuk berinvestasi akhirat di <<app_name>>\nPahala besar dan keberkahan sudah menunggu segera tunaikan niat baik Anda\n\nIni Nomor Transaksinya : <<invoice_number>>\nDonasi untuk program: <<campaign_name>>\nTinggal selangkah lagi pahala Anda langsung mengalir in syaa Allah.\n\nSilahkan transfer sejumlah <<donation_amount>>\n(Pastikan nominal transfernya sama persis, agar bisa kami konfirmasi dengan tepat)\n\nPembayaran dengan: <<payment_method>>\nLakukan sebelum <<time_limit>>\n\nSemoga niat baik kita semua, dimudahkan oleh Allah.\n\nSilahkan simpan kontak ini sebagai Admin Amal <<app_name>> untuk mendapatkan info terkait program lainnya.\n\nTerima kasih.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(2,'donation_thanks','Bismillah..\n\nAssalaamualaikum Bapak/Ibu...\nSahabat-Surga\n\nAlhamdulillah investasi akhirat Anda sebesar <<donation_amount>> telah kami terima\n\nKami berdoa semoga membalasnya dengan pahala yang besar dan tidak putus putus nya. Menambahkan keberkahan pada harta yang tersisa dan memberikan kebahagiaan bagi Anda dan keluarga. Serta Allah mudahkan semua urusan Anda.\nAmin Ya Robbal Alamin\n\nTerima kasih.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'gold_price','830000','2023-04-07 07:23:38','2023-04-07 07:23:38',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'silver_price','12000','2023-04-07 07:23:38','2023-04-07 07:23:38',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `settings` VALUES (1,'donation_reminder','Bismillah..\n\nAssalaamualaikum Bapak/Ibu...\nSahabat-Surga\n\nTerima kasih telah berniat untuk investasi akhirat di <<app_name>>.\n\nKami hanya ingin mengingatkan niat baik Bapak/Ibu untuk berinvestasi akhirat di <<app_name>>\nPahala besar dan keberkahan sudah menunggu segera tunaikan niat baik Anda\n\nIni Nomor Transaksinya : <<invoice_number>>\nDonasi untuk program: <<campaign_name>>\nTinggal selangkah lagi pahala Anda langsung mengalir in syaa Allah.\n\nSilahkan transfer sejumlah <<donation_amount>>\n(Pastikan nominal transfernya sama persis, agar bisa kami konfirmasi dengan tepat)\n\nPembayaran dengan: <<payment_method>>\nLakukan sebelum <<time_limit>>\n\nSemoga niat baik kita semua, dimudahkan oleh Allah.\n\nSilahkan simpan kontak ini sebagai Admin Amal <<app_name>> untuk mendapatkan info terkait program lainnya.\n\nTerima kasih.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(2,'donation_thanks','Bismillah..\n\nAssalaamualaikum Bapak/Ibu...\nSahabat-Surga\n\nAlhamdulillah investasi akhirat Anda sebesar <<donation_amount>> telah kami terima\n\nKami berdoa semoga membalasnya dengan pahala yang besar dan tidak putus putus nya. Menambahkan keberkahan pada harta yang tersisa dan memberikan kebahagiaan bagi Anda dan keluarga. Serta Allah mudahkan semua urusan Anda.\nAmin Ya Robbal Alamin\n\nTerima kasih.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'gold_price','830000','2023-04-07 07:35:52','2023-04-07 07:35:52',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'silver_price','12000','2023-04-07 07:35:52','2023-04-07 07:35:52',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1063,7 +1064,7 @@ CREATE TABLE `storage_usages` (
 
 LOCK TABLES `storage_usages` WRITE;
 /*!40000 ALTER TABLE `storage_usages` DISABLE KEYS */;
-INSERT INTO `storage_usages` VALUES (1,245271370,60049712,'2023-04-07 07:23:38','2023-04-07 07:23:38'),(2,224341488,47081190,'2023-04-06 07:23:38','2023-04-07 07:23:38'),(3,264829656,33773752,'2023-04-05 07:23:38','2023-04-07 07:23:38'),(4,269814260,11490028,'2023-04-04 07:23:38','2023-04-07 07:23:38'),(5,229682933,49109252,'2023-04-03 07:23:38','2023-04-07 07:23:38'),(6,220258916,10079129,'2023-04-02 07:23:38','2023-04-07 07:23:38'),(7,259224104,99188240,'2023-04-01 07:23:38','2023-04-07 07:23:38'),(8,234938675,16123686,'2023-03-31 07:23:38','2023-04-07 07:23:38'),(9,268332779,16245235,'2023-03-30 07:23:38','2023-04-07 07:23:38'),(10,210489228,24515288,'2023-03-29 07:23:38','2023-04-07 07:23:38');
+INSERT INTO `storage_usages` VALUES (1,309056150,28718648,'2023-04-07 07:35:52','2023-04-07 07:35:52'),(2,209553582,30743060,'2023-04-06 07:35:52','2023-04-07 07:35:52'),(3,224935862,18098222,'2023-04-05 07:35:52','2023-04-07 07:35:52'),(4,212613428,26684744,'2023-04-04 07:35:52','2023-04-07 07:35:52'),(5,260933908,52785030,'2023-04-03 07:35:52','2023-04-07 07:35:52'),(6,245842256,37032168,'2023-04-02 07:35:52','2023-04-07 07:35:52'),(7,240330130,58036136,'2023-04-01 07:35:52','2023-04-07 07:35:52'),(8,226513465,29910845,'2023-03-31 07:35:52','2023-04-07 07:35:52'),(9,237274840,37447370,'2023-03-30 07:35:52','2023-04-07 07:35:52'),(10,246293674,70894856,'2023-03-29 07:35:52','2023-04-07 07:35:52');
 /*!40000 ALTER TABLE `storage_usages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1226,7 +1227,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'admin','admin@gmail.com',NULL,'$2y$10$0a1v/rc5ArOlcCtNruWM5u3Ntl3DO2H96jCbL5642M5Ekm4CIRjKC','admin',NULL,NULL,'2023-04-07 07:23:38','2023-04-07 07:23:38',0,NULL,NULL,0);
+INSERT INTO `users` VALUES (1,'admin','admin@gmail.com',NULL,'$2y$10$ayHpm/ck0EZVOabYgbTCpOC8TgdW.MpyWq.IfwNAtXrCaXUuDXyS6','admin',NULL,NULL,'2023-04-07 07:35:52','2023-04-07 07:35:52',0,NULL,NULL,0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1314,4 +1315,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-07 14:24:44
+-- Dump completed on 2023-04-07 14:37:03
