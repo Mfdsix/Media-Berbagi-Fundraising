@@ -1,0 +1,35 @@
+.article-section {
+    padding: 17px 25px;
+}
+
+.article-section .article-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    letter-spacing: 0.015em;
+    color: var(--primary);
+}
+
+.article-section .article-detail {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.015em;
+    color: #C7C7C7;
+}
+
+.article-section .article-content {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    color: #363636;
+}

@@ -1,0 +1,17 @@
+.screen {
+    width: 414px;
+    min-height: 80vh;
+    background-color: white;
+    position: relative;
+    margin-top: 70px;
+}
+.footer-menu .quantity-amount{
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	color: #363636;
+}

@@ -1,0 +1,294 @@
+.screen {
+    padding-bottom: 120px;
+}
+
+.instruction-section {
+    padding: 17px 25px;
+}
+
+.instruction-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* line-height: 19px; */
+    color: #363636;
+    text-align: center;
+    line-height: 150%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.instruction-time-limit span,
+.instruction-text span {
+    font-weight: 600;
+}
+
+.instruction-nominal {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: var(--primary);
+    text-align: center;
+    margin: 25px 0;
+}
+
+.instruction-nominal span {
+    color: var(--secondary);
+}
+
+.instruction-alert {
+    background: var(--trans-secondary);
+    border: 1px solid #FDB504;
+    box-sizing: border-box;
+    border-radius: 13px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.instruction-alert span {
+    font-weight: 500;
+}
+
+.transfer-detail-box {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 13px;
+    padding: 16px 18px;
+    margin-top: 15px;
+}
+
+.transfer-detail-box .transfer-detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transfer-detail-box .transfer-detail-item:not(:first-child) {
+    padding-top: 17px;
+}
+
+.transfer-detail-box .transfer-detail-item:not(:last-child) {
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 10px;
+}
+
+.transfer-detail-box .transfer-detail-item .transfer-detail-value {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #363636;
+}
+
+.transfer-detail-box .transfer-detail-item .transfer-main-value {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #363636;
+}
+
+.instruction-transfer-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #363636;
+}
+
+.instruction-transfer-text span {
+    font-weight: bold;
+}
+
+.instruction-account-bar {
+    width: 100%;
+    height: 63px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 13px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.instruction-account-bar img {
+    width: 63.83px;
+    height: auto;
+}
+
+.instruction-account-bar .instruction-account-number {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #363636;
+}
+
+.instruction-account-bar .btn-copy {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: var(--primary);
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.instruction-time-limit {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #363636;
+    margin-top: 15px;
+}
+
+.instruction-box {
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.instruction-box .accordion {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.instruction-box .accordion::after {
+    content: url(../img/icons/arrowdown-dark.svg);
+    float: right;
+}
+
+.instruction-box .accordion.active::after {
+    content: url(../img/icons/arrowup-dark.svg);
+    float: right;
+}
+
+.instruction-box .panel {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    /* or 24px */
+    color: #363636;
+    padding: 7px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.btn-cancel-topup {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--danger);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.qris-image {
+    width: 231px;
+    height: 231px;
+    display: block;
+    margin: 20px auto;
+}
+
+.qris-instruction {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #363636;
+}
+
+.qris-instruction span {
+    font-weight: bold;
+}
+
+.btn-donasi-lagi {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+
+.btn-pay-now {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-donasi-lagi:hover {
+    background-color: var(--primary);
+    color: white;
+}

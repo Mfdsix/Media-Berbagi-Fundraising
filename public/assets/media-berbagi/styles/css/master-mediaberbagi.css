@@ -1,0 +1,2221 @@
+:root{
+    --primary-color: #077734;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    max-width: 576px;
+    margin: 0px auto;
+    overflow-x: hidden;
+    background-color: #eee;
+    font-family: "Roboto", sans-serif;
+}
+a,
+button {
+    background-color: transparent;
+    border: unset;
+    text-decoration: unset !important;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+    transition: 0.175s ease-in;
+    color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+input:focus {
+    outline: none;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.h-20px {
+    height: 20px;
+}
+.h-75px {
+    height: 75px;
+}
+
+.w-20px {
+    width: 20px;
+}
+.w-45pc {
+    width: 45%;
+}
+
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+}
+.font-inter {
+    font-family: "Inter", sans-serif;
+}
+
+.color-black-1 {
+    color: #000 !important;
+}
+.color-black-2 {
+    color: #383838 !important;
+}
+.color-green-1 {
+    color: var(--primary-color) !important;
+}
+.color-green-2 {
+    color: #0cc108 !important;
+}
+
+.padding-x-15px {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.padding-l-24px {
+    padding-left: 24px;
+}
+.padding-l-32px {
+    padding-left: 32px;
+}
+.padding-l-33px {
+    padding-left: 33px;
+}
+.padding-l-35px {
+    padding-left: 35px;
+}
+.padding-l-48px {
+    padding-left: 48px;
+}
+
+.padding-b-25px {
+    padding-bottom: 25px;
+}
+.padding-b-32px {
+    padding-bottom: 32px;
+}
+.padding-b-50px {
+    padding-bottom: 50px;
+}
+.padding-b-75px {
+    padding-bottom: 75px;
+}
+.padding-b-100px {
+    padding-bottom: 100px;
+}
+.padding-b-125px {
+    padding-bottom: 125px;
+}
+.padding-b-150px {
+    padding-bottom: 150px;
+}
+
+.margin-t-38px {
+    margin-top: 38px;
+}
+.margin-t-48px {
+    margin-top: 48px;
+}
+.margin-b-8px {
+    margin-bottom: 8px;
+}
+.margin-b-14px {
+    margin-bottom: 14px;
+}
+.margin-b-16px {
+    margin-bottom: 16px;
+}
+.margin-b-20px {
+    margin-bottom: 20px;
+}
+.margin-b-24px {
+    margin-bottom: 24px;
+}
+.margin-b-25px {
+    margin-bottom: 25px;
+}
+.margin-b-28px {
+    margin-bottom: 28px;
+}
+.margin-b-32px {
+    margin-bottom: 32px;
+}
+.margin-b-42px {
+    margin-bottom: 42px;
+}
+.margin-b-54px {
+    margin-bottom: 54px;
+}
+
+.input-default-form-50px, .input-default-form-50px-textarea {
+    height: 50px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 0px 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #979797;
+}
+.input-default-form-50px::placeholder {
+    color: #8f8f8f;
+}
+.input-default-form-50px-textarea {
+    height: auto;
+    padding: 14px;
+}
+
+.main-section-title-primary {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #363636;
+}
+.main-section-text-16 {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #363636;
+    line-height: 24px;
+}
+.main-section-text-14 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #363636;
+    line-height: 24px;
+}
+
+.input-fundraiser-form {
+    height: 45px;
+    width: 100%;
+    padding: 0px 18px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-size: 14px;
+    background-color: #fff;
+}
+.input-fundraiser-form::placeholder {
+    font-weight: 400;
+    color: #ababab;
+}
+.label-fundraiser-text {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+}
+.p-fundraiser-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    line-height: 22.4px;
+}
+.button-fundraiser-submit {
+    height: 50px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+.button-fundraiser-submit:disabled,
+.button-fundraiser-submit[disabled] {
+    background: #d2ddd6;
+}
+
+.akun-image-circle {
+    height: 156px;
+    width: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+.akun-image-circle img {
+    height: 137px;
+    width: 137px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.akun-login-input-username {
+    width: 120px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    border: unset;
+}
+.akun-login-input-username:focus {
+    outline: none;
+}
+.akun-login-input-pencil {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.akun-login-founder {
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+}
+.akun-label-icon {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #363636;
+    transition: 0.15s ease-in;
+}
+.akun-label-icon:hover {
+    color: var(--primary-color);
+}
+.akun-label-icon-2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+.akun-button-keluar {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-color);
+    text-align: center;
+    transition: 0.15s ease-in;
+}
+.akun-button-keluar:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.akun-label-new {
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.akun-text-two-line-title {
+    font-weight: 300;
+    font-style: 16px;
+    color: #afafaf;
+}
+.akun-text-two-line-text {
+    position: relative;
+    font-weight: 700;
+    font-size: 36px;
+    color: #545454;
+}
+.akun-text-two-line-text sup {
+    position: absolute;
+    top: 10px;
+    font-size: 10px;
+}
+
+.line-1px {
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.line-10px {
+    height: 10px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.line-7px-plus-30px {
+    height: 7px;
+    width: calc(100% + 30px);
+    background-color: #f1f1f1;
+    margin-left: -15px;
+}
+
+#shadow-modal {
+    height: 100%;
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(58, 58, 58, 0.77);
+    visibility: hidden;
+    z-index: -10;
+}
+
+.modal-lihat-semua {
+    height: auto;
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 48px;
+    padding-bottom: 50px;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 100;
+    transition: 0.2s ease-in;
+}
+.modal-lihat-semua-close-button {
+    /* height: 5px; */
+    /* width: 77px; */
+    position: absolute;
+    top: 14px;
+    right:20px;
+    background-color: transparent;
+    /* border-radius: 3px; */
+}
+.modal-lihat-semua-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #363636;
+}
+.modal-lihat-semua-cover {
+    height: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.modal-lihat-semua-cover img, .modal-lihat-semua-cover video, .modal-lihat-semua-cover iframe {
+    max-width: 100%;
+}
+.modal-sedekah-bullet-line {
+    height: 100%;
+    width: 12px;
+    margin-right: 10px;
+}
+.modal-sedekah-bullet-line__bullet {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+}
+.modal-sedekah-bullet-line__line,
+.modal-sedekah-bullet-line__line-2 {
+    height: 100%;
+    width: 1px;
+    background-color: #c7c7c7;
+    margin: 0px auto;
+}
+.modal-sedekah-bullet-line__line-2 {
+    width: 1px;
+    background-color: #c7c7c7;
+    margin: 0px auto;
+}
+.modal-sedekah-bullet-data {
+    width: calc(100% - 22px);
+}
+.modal-sedekah-bullet-kb__date {
+    font-size: 12px;
+    color: #a4a4a4;
+    margin-top: 26px;
+}
+.modal-sedekah-bullet-kb__title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 12px;
+}
+.modal-sedekah-bullet-kb__text,
+.modal-sedekah-bullet-kb__text-2 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 19.67px;
+    color: #363636;
+    margin: 6px 0;
+}
+.modal-lihat-semua-cover img {
+    margin: 6px 0;
+}
+.modal-sedekah-bullet-kb__text-2 {
+    overflow-y: hidden;
+    background: -webkit-linear-gradient(#383838, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.modal-sedekah-bullet-kb__image {
+    height: 152px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+.modal-lihat-semua-cover .col-12:last-child .modal-sedekah-bullet-kb__image {
+    margin-bottom: 12px;
+}
+
+.logo-media-berbagi {
+    max-width: 130px;
+    max-height: 50px;
+}
+
+.button__box__lihat__lebih__banyak {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#nav-top-secondary {
+    height: 75px;
+    width: 100%;
+    max-width: 576px;
+    background-color: var(--primary-color);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+.nav-top-secondary__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+#nav-top-primary {
+    width: 100%;
+    max-width: 576px;
+    max-height: 90vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    z-index: 100;
+}
+.nav-top-primary__button__image {
+    height: 51px;
+    width: 51px;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.nav-top-primary__button__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#nav-top-primary-burger {
+    display: none;
+    padding: 34px 24px 60px;
+    background-color: #fff;
+}
+.nav-top-primary__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #383838;
+    margin-bottom: 26px;
+}
+.nav-top-primary__category {
+    position: relative;
+    width: calc(50% - 10px);
+}
+.nav-top-primary__category img {
+    height: 87px;
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.nav-top-primary__cover {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(36, 36, 36, 0.83) 77.08%
+    );
+    padding-bottom: 16px;
+}
+.nav-top-primary__cover__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+#nav-top-primary-search {
+    display: none;
+    padding: 25px 24px 31px;
+}
+.nav-top-primary__search__input {
+    height: 48px;
+    width: 100%;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    padding-left: 16px;
+    padding-right: 48px;
+    border: 1px solid var(--primary-color);
+    font-weight: 500;
+    font-size: 12px;
+    color: #6d6d6d;
+}
+.nav-top-primary__search__input::placeholder {
+    color: #6d6d6d;
+}
+.nav-top-primary__search__submit {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+#nav-top-primary-image-login {
+    background-color: #fff;
+    padding: 12px 20px 20px;
+    display: none;
+}
+
+#nav-top-primary-image {
+    display: none;
+    background-color: #fff;
+    padding: 30px 20px 24px;
+}
+.nav-top-primary-image_title {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #2b2b2b;
+    margin-bottom: 31px;
+}
+.nav-top-primary-image__input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    padding: 0px 16px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #2b2b2b;
+    border-radius: 5px;
+}
+.nav-top-primary-image__input::placeholder {
+    color: #ababab;
+}
+.nav-top-primary-image__lupa__sandi {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.nav-top-primary-image__button__login {
+    height: 45px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+.nav-top-primary-image__daftar__sekarang,
+.nav-top-primary-image__atau__masuk {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+.nav-top-primary-image__daftar__sekarang a {
+    font-family: "Inter", sans-serif;
+    color: var(--primary-color);
+}
+.nav-top-primary-image__button__gf {
+    font-family: "Inter", sans-serif;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+.nav-top-primary-image__image__gf {
+    position: absolute;
+    top: 50%;
+    left: 38px;
+    transform: translateY(-50%);
+}
+
+#nav-bottom-primary {
+    height: 65px;
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    z-index: 80;
+}
+.nav-bottom-primary__link {
+    display: block;
+    text-align: center;
+    color: #c4c4c4;
+}
+.nav-bottom-primary__link:hover {
+    color: var(--primary-color);
+}
+.nav-bottom-primary__text {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: inherit;
+}
+.nav-bottom-primary__link__active {
+    color: var(--primary-color);
+}
+
+#nav-bantu-share {
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-top: 7px solid #f1f1f1;
+    padding: 26px 0px 19px;
+    z-index: 80;
+}
+.nav-bantu-share__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.nav-bantu-share__hijau,
+.nav-bantu-share__biru {
+    height: 40px;
+    width: calc(50% - 7.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.nav-bantu-share__hijau {
+    background-color: #25d366;
+    border-radius: 3px;
+}
+.nav-bantu-share__biru {
+    background-color: #3b5998;
+    border-radius: 3px;
+}
+.nav-bantu-share__whatsapp,
+.nav-bantu-share__transaksi {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+}
+.nav-bantu-share__whatsapp {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.nav-bantu-share__transaksi {
+    background-color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+#nav-bottom-share-daftar-kegiatan {
+    height: 84px;
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 80;
+}
+.nav-bottom-share-daftar-kegiatan__share {
+    height: 56px;
+    width: 35%;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.nav-bottom-share-daftar-kegiatan__kegiatan {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+#nav-share-section {
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: -200%;
+    left: 50%;
+    padding: 22px 18px;
+    border-radius: 16px 16px 0px 0px;
+    transform: translateX(-50%);
+    transition: 0.2s ease-in;
+    background-color: #fff;
+    z-index: 100;
+}
+.nav-share-section__title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #383838;
+}
+.nav-share-section__subtitle {
+    font-size: 12px;
+    color: #363636;
+    font-weight: 400;
+}
+.nav-share-section__input {
+    height: 48px;
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid #A1A1A1;
+}
+.nav-share-section__input-svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.nav-share-section__input input {
+    height: 100%;
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 15px;
+    color: #363636;
+    font-size: 14px;
+    border: unset;
+}
+.nav-share-section__copy {
+    height: 48px;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 575px) {
+    .nav-share-section__wa__mobile {
+        display: block;
+    }
+    .nav-bantu-share__hijau__mobile {
+        display: flex;
+    }
+    .nav-share-section__wa__desktop, .nav-bantu-share__hijau__desktop {
+        /* display: none; */
+    }
+}
+@media (min-width: 575px) {
+    .nav-share-section__wa__mobile, .nav-bantu-share__hijau__mobile {
+        display: none;
+    }
+    .nav-share-section__wa__desktop {
+        display: block;
+    }
+    .nav-bantu-share__hijau__desktop {
+        display: flex;
+    }
+}
+
+#page-nav-sedekah {
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 24px 0px 16px;
+    z-index: 80;
+}
+.page-nav-sedekah__fundraiser {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 13px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.page-nav-sedekah__share,
+.page-nav-sedekah__donasi {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+    transition: 0.15s ease-in;
+}
+.page-nav-sedekah__share {
+    width: 30%;
+}
+.page-nav-sedekah__share:hover,
+.page-nav-sedekah__fundraiser:hover {
+    background-color: var(--primary-color);
+    color: #fff !important;
+}
+.page-nav-sedekah__donasi {
+    width: 65%;
+    background-color: var(--primary-color);
+    color: #fff !important;
+}
+
+#sedekah-wakaf-zakat {
+    background-color: #fff;
+    padding-top: 99px;
+}
+.home__button__sedekah,
+.home__button__wakaf,
+.home__button__zakat {
+    height: 61px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e4e4e4;
+    background-color: #efefef;
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #8b8b8b;
+}
+.home__button__sedekah {
+    border-radius: 8px 0px 0px 8px;
+}
+.home__button__zakat {
+    border-radius: 0px 8px 8px 0px;
+}
+.home__button__3__active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.home__pilih__nominal {
+    height: 61px;
+    width: calc(50% - 10px);
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #383838;
+}
+.home__pilih__nominal__active {
+    border: 1px solid var(--primary-color) !important;
+}
+
+.atau-line {
+    height: 1px;
+    width: 100%;
+    background-color: #efefef;
+}
+.atau-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0px 16px;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #383838;
+}
+
+.home__input__nominal__donasi {
+    height: 61px;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #f3f3f3;
+    font-weight: 700;
+    font-size: 12px;
+    outline: none;
+    color: #8f8f8f;
+}
+.home__input__nominal__donasi::placeholder {
+    color: #8f8f8f;
+}
+.home__input__nominal__donasi:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.home__button__donasi__sekarang {
+    height: 61px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 14px;
+    margin-bottom: 33px;
+}
+
+.member__of__image {
+    max-width: 33%;
+}
+
+#home-slider {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 34px;
+    padding-bottom: 18px;
+}
+.home-slider-pagination {
+    padding-top: 16px;
+    text-align: center;
+}
+.home-slider-pagination .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background-color: #c4c4c4;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important;
+}
+.home__slider__item {
+    width: 359px;
+    filter: drop-shadow(3px 4px 13px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    overflow: hidden;
+}
+.home__slider__item img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.button__menu__2__news {
+    height: 53px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #c7c7c7;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #afcb22;
+}
+.button__menu__2__news sup {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: #bc0f0f;
+}
+.button__menu__2__news__active {
+    color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--primary-color) !important;
+}
+
+.home__trending__link {
+    display: block;
+    position: relative;
+}
+.home__trending__image {
+    /* height: calc(100vh - 80px);
+    max-height: 800px; */
+    width: 100%;
+    object-fit: cover;
+}
+.home__tending__cover {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.78) 78.52%
+    );
+    padding: 0px 24px 31px;
+}
+.home__trending__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.home__trending__text {
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+    margin-bottom: 11px;
+}
+.home__trending__detail {
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 13px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.home__berita__link {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(40, 83, 53, 0.2);
+    overflow: hidden;
+}
+.home__berita__card__head img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.home__berita__card__body {
+    padding: 22px 18px 32px;
+}
+.home__berita__card__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #121212;
+    margin-bottom: 12px;
+}
+.home__berita__card__text {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #121212;
+}
+
+#pilih-metode-pembayaran {
+    width: 100%;
+    max-width: 576px;
+    position: fixed;
+    bottom: -200%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding-bottom: 32px;
+    border-radius: 15px 15px 0px 0px;
+    z-index: 100;
+    transition: 0.3s ease-in;
+    height: 80vh !important;
+    overflow-y: auto;
+}
+.pilih-metode-pembayaran__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #363636;
+}
+.pilih-metode-pembayaran__line {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding-left: 35px;
+}
+.pilih-metode-pembayaran__subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #000;
+}
+.pilih-metode-pembayaran__row {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.pilih-metode-pembayaran__payment[disabled]{
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.pilih-metode-pembayaran__payment {
+    position: relative;
+    height: 60px;
+    width: 126px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-right: 19px;
+}
+.pilih-metode-pembayaran__payment-active {
+    border: 3px solid var(--primary-color);
+}
+.pilih-metode-pembayaran__image {
+    width: 76px;
+    height: auto;
+    max-height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#page-category-menu {
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+#page-category-menu img{
+    width: 100% !important;
+}
+.page-category-menu__list {
+    width: 60px;
+}
+.page-category-menu__list:last-child {
+    margin-right: 15px;
+}
+.page-category-menu__cover {
+    height: 60px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f9f9fb;
+    border: 1px solid #f9f9fb;
+    margin-bottom: 11px;
+}
+.page-category-menu__image {
+    width: 30px;
+}
+.page-category-menu__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+.page-category-menu__list__active .page-category-menu__cover {
+    border: 1px solid var(--primary-color);
+}
+.page-category-menu__list__active .page-category-menu__title {
+    color: var(--primary-color);
+}
+
+#page-main-ewallet {
+    padding-top: 52px;
+    padding-bottom: 165px;
+}
+.page-main-ewallet__barcode {
+    height: 231px;
+    width: 231px;
+}
+.page-main-ewallet__box {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+#page-main-va {
+    padding-top: 32px;
+    padding-bottom: 165px;
+}
+.page-main-va__input__nominal,
+.page-main-va__input__rekening {
+    width: 100%;
+    height: 74px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    color: #363636;
+}
+.page-main-va__input__nominal {
+    padding: 0px 48px 0px 18px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.page-main-va__input__rekening {
+    padding: 0px 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .page-main-va__input__rekening {
+        font-size: 14px;
+        padding-left: 90px;
+    }
+}
+.page-main-va__salin__nominal,
+.page-main-va__salin__rekening {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.page-main-va__image__rekening {
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+}
+.page-main-va__panduan__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.page-main-va__accordion {
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+}
+.page-main-va__panduan__subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+}
+.page-main-va__accordion__list {
+    border-bottom: 1px solid #c7c7c7;
+}
+.page-main-va__accordion__list:last-child {
+    border-bottom: unset;
+}
+.page-main-va__accordion__item {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 23.8px;
+    color: #363636;
+}
+.page-main-va__accordion__item {
+    display: none;
+}
+.page-main-va__accordion__list:first-child .page-main-va__accordion__item {
+    display: block;
+}
+.page-main-va__accordion__item svg {
+    transition: 0.175s ease-in;
+}
+.page-main-va__accordion__list:first-child svg {
+    transform: rotate(180deg);
+}
+
+#page-main-login {
+    font-family: "Inter", sans-serif;
+    padding-top: 30px;
+}
+
+#page-main-daftar {
+    padding-top: 20px;
+}
+
+#main-page-belum-login {
+    padding-top: 35px;
+}
+.main-page-belum-login__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #363636;
+    margin-bottom: 22px;
+}
+.main-page-belum-login__button__masuk {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 13px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 32px;
+    transition: 0.175s ease-in;
+}
+.main-page-belum-login__button__masuk:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.main-page-belum-login__belum__punya__akun {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.main-page-belum-login__versi {
+    font-size: 12px;
+    color: #a4a4a4;
+}
+
+#main-page-sudah-login {
+    padding-top: 28px;
+}
+.main-page-sudah-login__green__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06),
+        0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+.main-page-sudah-login__green__box__image {
+    width: 35%;
+}
+.main-page-sudah-login__green__box__image img {
+    height: 50px;
+    width: calc(100% - 22px);
+}
+.main-page-sudah-login__green__box__text {
+    width: 65%;
+}
+.main-page-sudah-login__green__box__text__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19.42px;
+    color: #fdfdff;
+}
+.main-page-sudah-login__green__box__text__link {
+    height: 25px;
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fdfdff;
+    font-size: 11px;
+    background-color: #f6b630;
+    border-radius: 4px;
+}
+@media (min-width: 768px) {
+    .page-header-sedekah-background {
+        background-position: center !important;
+    }
+}
+#page-header-sedekah {
+    height: 80vh;
+    /* max-height: 800px; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#page-main-sedekah {
+    position: relative;
+}
+.page-header-image-sedekah{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform:translateX(-50%);
+    max-width:576px;
+    z-index: 0;
+}
+.page-header-sedekah-background {
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.page-header-sedekah__button__back {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 5;
+}
+.page-header-sedekah__button__author {
+    height: 58px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 32px;
+    right: 0px;
+    background-color: #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 5;
+}
+#page-main-sedekah {
+    padding-top: 48px;
+    padding-bottom: 145px;
+    font-family: "Inter", sans-serif;
+}
+.page-main-sedekah__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38.4px;
+    color: #383838;
+}
+.page-main-sedekah__button__love {
+    height: 48px;
+    width: 48px;
+    background-color: #efefef;
+    border-radius: 50%;
+}
+.page-main-sedekah__button__love > * {
+    height: 32px;
+    width: 32px;
+}
+.page-main-sedekah__progressbar {
+    height: 6px;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+.page-main-sedekah__progressbar__data {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+.sedekah-section-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #383838;
+}
+.sedekah-section-nominal {
+    font-weight: 700;
+    font-size: 18px;
+    color: #383838;
+}
+.sedekah-section-hari {
+    font-weight: 700;
+    font-size: 14px;
+    color: #383838;
+}
+.sedekah-section-nominal-hari-bottom {
+    font-size: 12px;
+    color: #a2a2a2;
+}
+.page-main-sedekah__deskripsi {
+    overflow: hidden;
+}
+.page-main-sedekah__deskripsi img, .page-main-sedekah__deskripsi video, .page-main-sedekah__deskripsi iframe {
+    max-width: 100%;
+}
+.page-main-sedekah__deskripsi {
+    height: 100px;
+    overflow-y: hidden;
+    font-size: 14px;
+    line-height: 22.4px;
+    background: -webkit-linear-gradient(#383838, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.page-main-sedekah__deskripsi__text-2 {
+    font-size: 14px;
+    line-height: 22.4px;
+}
+.sedekah-section-lihat-semua {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.sedekah-section-baca-selengkapnya {
+    font-family: "Inter", sans-serif;
+    padding: 5px 21px;
+    background-color: #daffe9;
+    border-radius: 10px;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.sedekah-section-text-nodata {
+    width: 317px;
+    margin: 25px auto 0px;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.page-main-sedekah-profile__circle {
+    height: 51px;
+    width: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 26px;
+}
+.profile__circle-red {
+    background-color: #ffeeee;
+    color: #dc3f3f;
+}
+.profile__circle-green {
+    background-color: #eefff5;
+    color: var(--primary-color);
+}
+.profile__circle-blue {
+    background-color: #dceaff;
+    color: #0a4cb0;
+}
+
+.page-main-sedekah-profile__nama {
+    font-weight: 700;
+    font-size: 14px;
+    color: #383838;
+    display: flex;
+}
+
+.page-main-sedekah-donatur-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.page-main-sedekah-donatur-list__waktu {
+    font-size: 12px;
+    color: #363636;
+}
+.page-main-sedekah-donatur-list__nominal {
+    font-weight: 700;
+    font-size: 14px;
+    color: #363636;
+}
+.page-main-sedekah-donatur-list__doa {
+    font-style: italic;
+    font-size: 12px;
+    color: #363636;
+    line-height: 19.2px;
+    width: 80%;
+    padding-left: 77px;
+}
+
+.page-main-sedekah-fundraiser-list {
+    display: flex;
+    align-items: center;
+}
+.page-main-sedekah-fundraiser-list__text {
+    font-size: 12px;
+    color: #383838;
+    margin-bottom: 8px;
+}
+.page-main-sedekah-fundraiser-list__text strong {
+    color: var(--primary-color);
+}
+.page-main-sedekah-fundraiser-list__nominal {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+/* DETAIL DONASI */
+.page-detail-donasi__box {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #c7c7c7;
+    box-sizing: border-box;
+    padding: 8px 21px;
+    border-radius: 5px;
+}
+.page-detail-donasi__box__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.page-detail-donasi__box__text__left {
+    font-size: 14px;
+    color: #363636;
+}
+.page-detail-donasi__box__text__right {
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+}
+.page-detail-donasi__box__text__status {
+    padding: 4px 16px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+.page-detail-donasi__box__text__status-green {
+    color: #26a69a;
+    border: 1px solid #26a69a;
+}
+.page-detail-donasi__download {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 24px;
+}
+.page-detail-donasi__article__left {
+    width: 166px;
+}
+.page-detail-donasi__article__left img {
+    height: 90px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.page-detail-donasi__article__right {
+    width: calc(100% - 166px - 13px);
+}
+.page-detail-donasi__article__title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 7px;
+}
+.page-detail-donasi__article__title a:hover {
+    color: inherit;
+}
+.page-detail-donasi__article__author {
+    font-size: 10px;
+    color: #a4a4a4;
+    margin-bottom: 7px;
+}
+.page-detail-donasi__article__link {
+    height: 25px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* HISTORI TRANSAKSI */
+#page-categori-histori-donasi {
+    padding-top: 28px;
+    padding-bottom: 14px;
+}
+#page-categori-histori-donasi-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.page-categori-historu-donasi__link {
+    height: 45px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+.page-categori-historu-donasi__link:hover {
+    color: var(--primary-color);
+}
+.page-categori-historu-donasi__link__active {
+    padding: 0px 32px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.page-categori-historu-donasi__link__active:hover {
+    color: #fff;
+}
+.page-categori-historu-donasi__link__active img{
+    filter: grayscale(100%) brightness(100);
+}
+.page-categori-historu-donasi__link img {
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+}
+.page-main-histori-donasi__list {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 26px 0px;
+}
+.page-main-histori-donasi__list:last-child {
+    border: none;
+}
+.page-main-histori-donasi__list__left {
+    height: 75px;
+    width: 75px;
+    border-radius: 7px;
+    margin-right: 18px;
+}
+.page-main-histori-donasi__list__left img {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+}
+.page-main-histori-donasi__list__center {
+    min-height: 75px;
+    width: 156px;
+}
+.page-main-histori-donasi__list__center__title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #363636;
+}
+.page-main-histori-donasi__list__center__date {
+    font-size: 12px;
+}
+.page-main-histori-donasi__list__center__date span {
+    color: #c7c7c7;
+}
+.page-main-histori-donasi__list__center__date strong {
+    color: #363636;
+}
+.page-main-histori-donasi__list__right {
+    height: 20px;
+    width: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #26a69a;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #26a69a;
+}
+
+/* ARTICLE */
+.aritcle-slider-menu {
+    width: auto;
+    padding: 0px 6px;
+    font-size: 16px;
+    color: #5e5e5e;
+}
+.aritcle-slider-menu:hover {
+    color: var(--primary-color);
+}
+.aritcle-slider-menu__active {
+    font-weight: 600;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.page-article__slider__item {
+    width: 70% !important;
+}
+.page-article__slider__item img {
+    height: 138px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
+.page-article__slider__item__date__read {
+    font-size: 12px;
+    color: #c7c7c7;
+}
+.page-article__slider__item__title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #363636;
+    line-height: 24px;
+}
+.page-article-slide-swiper-pagination {
+    text-align: center;
+}
+.page-article-slide-swiper-pagination .swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 4px;
+}
+
+.article-main-list {
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+.article-main-list__image {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.article-main-list__body {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(40, 83, 53, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px 20px;
+}
+.article-main-list__title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #121212;
+    margin-bottom: 12px;
+}
+.article-main-list__text {
+    font-weight: 300;
+    font-size: 14px;
+    color: #121212;
+    line-height: 16.41px;
+}
+.article-main-baca-selanjutnya {
+    height: 45px;
+    width: calc(100% - 48px);
+    margin: 8px auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.article-main-baca-selanjutnya:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* DETAIL ARTICLE */
+#page-detail-article-header {
+    height: 371px;
+    width: 100%;
+    background-size: 576px 371px;
+    background-position: top;
+    background-attachment: fixed;
+    padding-top: 44px;
+}
+.page-detail-article-section__article {
+    padding: 0px 15px;
+    margin-top: 21px;
+    margin-bottom: 28px;
+    font-family: "Inter", sans-serif;
+    border-left: 4px solid var(--primary-color);
+}
+.page-detail-article-section__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.page-detail-article-section__date__read {
+    font-size: 12px;
+    color: #c7c7c7;
+}
+#page-detail-article-main {
+    padding-bottom: 30px;
+    font-family: "Inter", sans-serif;
+}
+.page-detail-article-main__article {
+    font-size: 14px;
+    color: #363636;
+    line-height: 21px;
+}
+.page-detail-article-main__article img, .page-detail-article-main__article video, .page-detail-article-main__article iframe {
+    max-width: 100%;
+}
+
+/* FUNDRAISER */
+#page-fundraiser-main {
+    font-family: "Inter", sans-serif;
+    padding-top: 32px;
+}
+#page-fundraiser-main .page-main-sedekah-profile__circle {
+    height: 55px;
+    width: 55px;
+    margin-right: 12px;
+}
+#page-fundraiser-main .page-main-sedekah-fundraiser-list__nominal {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* FUNDRAISER SEBELUM LOGIN */
+#page-fundraiser-belum-login {
+    font-family: "Inter", sans-serif;
+    padding-top: 32px;
+}
+.page-fundraiser__small__text {
+    font-size: 12px;
+    color: var(--primary-color);
+}
+.page-fundraiser__cover__link {
+    height: 45px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding: 0px 11px 0px 18px;
+    background: #f9f9f9;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    font-size: 14px;
+    color: #ababab;
+}
+.input-fundraiser-form__link {
+    position: relative;
+    margin-left: -5px;
+    width: calc(65% + 5px);
+    font-weight: 500;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+.page-fundraiser__box__green {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    background-color: #ebfff3;
+    border-radius: 3px;
+}
+.page-fundraiser__box__checklist {
+    height: 24px;
+    width: 25px;
+    border-radius: 4px;
+    border: 1px solid #8b8b8b;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    cursor: pointer;
+}
+.page-fundraiser__box__checklist-active {
+    border: 1px solid #0cc108;
+    background-color: #0cc108;
+    color: #fff;
+}
+#input-fundraiser-id-nominal {
+    padding-left: 48px;
+}
+#input-fundraiser-id-rp {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    font-size: 14px;
+    color: #ababab;
+}
+
+/* LANDING FUNDRAISER */
+#page-fundraiser-landing {
+    padding-top: 32px;
+}
+.input-fundraiser-form-password-svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* PEMBAYARAN DONASI */
+#page-pembayaran-donasi-section {
+    padding-top: 25px;
+}
+.page-pembayaran-donasi-section__box {
+    padding: 17px 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.page-pembayaran-donasi-section__box__image {
+    height: 81px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+.page-pembayaran-donasi-section__box__author {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    color: #979797;
+}
+.page-pembayaran-donasi-section__box__cover__progress {
+    height: 4px;
+    width: 100%;
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+}
+.page-pembayaran-donasi-section__box__progress {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+.page-pembayaran-donasi-main__pilih__pembayaran {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #363636;
+}
+#page-pembayaran-donasi-main-id-pilih-nominal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.page-pembayaran-donasi-main__pilih__nominal__donasi {
+    height: 50px;
+    width: calc(50% - 7px);
+    display: flex;
+    align-items: center;
+    padding: 0px 14px;
+    border-radius: 7px;
+    border: 1px solid #c7c7c7;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    color: #363636;
+}
+.page-pembayaran-donasi-main__pilih__nominal__donasi-active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+.page-pembayaran-donasi-main__input__nominal__donasi {
+    height: 50px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #c4c4c4;
+    border-radius: 7px;
+    padding: 0px 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #979797;
+}
+#form-nominal .form-slider {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+#form-nominal .form-slider input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#form-nominal .form-slider .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1f1f1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#form-nominal .form-slider .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -1px;
+    bottom: 1px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-color: #c4c4c4;
+}
+
+#form-nominal .form-slider input:checked + .slider::before {
+    background-color: var(--primary-color);
+}
+
+#form-nominal .form-slider input:checked + .slider {
+    background-color: #c2c8ff;
+}
+
+#form-nominal .form-slider input:focus + .slider {
+    box-shadow: 0 0 1px #c2c8ff;
+}
+
+#form-nominal .form-slider input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#form-nominal .form-slider .slider.round {
+    border-radius: 34px;
+}
+
+#form-nominal .form-slider .slider.round:before {
+    border-radius: 50%;
+}

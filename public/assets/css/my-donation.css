@@ -1,0 +1,110 @@
+.status-section {
+    padding: 20px 25px;
+}
+
+.status-section .swiper-slide {
+    width: auto;
+    height: 35px;
+    padding: 0;
+}
+
+.status-block {
+    width: auto;
+    height: 45px;
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 17px;
+}
+
+.status-block:hover {
+    cursor: pointer;
+}
+
+.status-block.active {
+    background-color: var(--primary);
+    color: white !important;
+}
+
+.history-section {
+    padding: 17px 25px;
+}
+
+.history-card {
+    display: flex;
+    /*//justify-content: space-between;*/
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.history-card .history-image {
+    width: 75px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+.history-card .history-content-wrapper {
+    /*//display: flex;*/
+    /*//justify-content: space-between;*/
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.history-card .history-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    /* or 24px */
+    color: #363636;
+    /*line-height: 0;*/
+}
+
+.history-card .history-detail-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.015em;
+    color: #C7C7C7;
+}
+
+.history-card .history-detail-text span {
+    color: #363636;
+}
+
+.history-status {
+    padding: 0 9px;
+    height: 20px;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.015em;
+    color: #A4A4A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none !important;
+}

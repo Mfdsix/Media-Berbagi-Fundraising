@@ -1,0 +1,161 @@
+.screen {
+    padding-bottom: 40px;
+}
+
+.order-items-group {
+    border-bottom: none;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.order-item-green {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+    color: #363636;
+}
+
+.order-item-quantity .number {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-bottom-link.whatsapp {
+    border-radius: 25px !important;
+}
+
+.check-item {
+    min-width: 20px !important;
+    width: 20px !important;
+    min-height: 20px !important;
+    height: 20px !important;
+    margin-right: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    transition-duration: 0.3s;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-item:checked {
+    border: 1px solid #fff;
+    background-color: var(--primary);
+}
+
+.check-item:checked::before {
+    content: url(../img/icons/tick-light.svg);
+    text-align: center;
+    color: #fff;
+    margin-top: 2px;
+}
+
+.check-item:active {
+    border: 2px solid var(--primary);
+}
+
+.cart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-wrapper .choose-all-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.03em;
+    color: #353535;
+}
+
+.cart-wrapper .check-item.small {
+    min-width: 20px !important;
+    width: 20px !important;
+    min-height: 20px !important;
+    height: 20px !important;
+    border-radius: 5px;
+}
+
+.cart-wrapper .total-price-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #353535;
+}
+
+.cart-wrapper .total-price-value {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: var(--primary);
+}
+
+.btn-cart {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    background: var(--primary);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+}
+
+.btn-cart span {
+    margin-left: 4px;
+}
+
+.cart-action-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+    padding: 20px 25px;
+}
+
+.cart-action-wrapper .choose-all-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    margin-top: 6px;
+}
+
+.quantity-number {
+    width: 35px !important;
+}

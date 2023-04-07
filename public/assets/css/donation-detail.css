@@ -1,0 +1,63 @@
+.donation-detail-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.donation-detail-card img {
+    margin-right: 15px;
+    width: 152px;
+    height: 80px;
+}
+
+.donation-detail-card .donation-detail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 80px;
+}
+
+.donation-detail-card .donation-detail-info .donation-detail-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    color: #363636;
+}
+
+.donation-detail-card .donation-detail-info .btn-donate-again {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    /* identical to box height, or 16px */
+    color: #FFFFFF;
+    width: 90px;
+    height: 25px;
+    background: var(--secondary);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-lihat-instruksi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lihat-instruksi-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+    color: var(--primary);
+    margin-top: 7px;
+}

@@ -1,0 +1,7 @@
+.screen {
+    width: 414px;
+    min-height: 92vh;
+    background-color: white;
+    position: relative;
+    margin-top: 70px;
+}

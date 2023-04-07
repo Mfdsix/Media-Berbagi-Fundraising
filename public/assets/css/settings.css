@@ -1,0 +1,33 @@
+.settings-choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    margin-bottom: -10px;
+}
+
+.settings-choice .settings-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.005em;
+    color: #363636;
+    margin-top: 13px;
+}
+
+.slider-info {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    color: rgba(54, 54, 54, 0.7);
+}
+
+.form-slider-group.with-info {
+    align-items: flex-start;
+}

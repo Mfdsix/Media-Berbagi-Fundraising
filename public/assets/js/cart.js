@@ -1,0 +1,1 @@
+// Halo min, Apakah *${name}* Masih Ready?\nSaya Ingin membeli *${name}* dengan variasi : \n${variations}

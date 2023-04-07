@@ -1,0 +1,129 @@
+.wallet-section {
+    padding: 26px 25px 3px 25px;
+}
+
+.topup-history-section {
+    padding: 0px 25px;
+}
+
+.wallet-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wallet-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #363636;
+}
+
+.wallet-amount {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #363636;
+}
+
+.btn-go-topup {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    width: 113px;
+    height: 45px;
+    background: var(--primary);
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.btn-go-topup:hover {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.topup-month {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #363636;
+    margin-bottom: 25px;
+}
+
+.topup-card {
+    /* display: flex; */
+    margin-bottom: 10px;
+}
+
+.topup-detail-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topup-label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #363636;
+}
+
+.topup-amount {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #363636;
+}
+
+.topup-date {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #A4A4A4;
+}
+
+.topup-status {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #A4A4A4;
+}

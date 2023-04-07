@@ -1,0 +1,134 @@
+.zakat-action-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#btn-zakat-kalkulator-top {
+    width: 131px;
+    min-width: 50%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary);
+    height: 52px;
+    background-color: white;
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+}
+
+#btn-zakat-kalkulator {
+    margin-left: 10px;
+    width: 131px;
+    min-width: 50%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary);
+    height: 52px;
+    background-color: white;
+    border: 1px solid var(--primary);
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-zakat-kalkulator:hover {
+    background-color: var(--primary);
+    color:white;
+}
+
+#btn-zakat-now {
+    margin-right: 5px;
+    width: 224px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    background-color: var(--primary);
+    box-sizing: border-box;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+
+#btn-zakat-now:hover {
+    background-color: white;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+@media screen and (max-width: 414px){
+    #btn-zakat-kalkulator {
+        margin-left: 10px;
+        width: 100px;
+        min-width: 50%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: var(--primary);
+        height: 52px;
+        background-color: white;
+        border: 1px solid var(--primary);
+        box-sizing: border-box;
+        border-radius: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn-zakat-kalkulator:hover {
+        background-color: var(--primary);
+        color:white;
+    }
+
+    #btn-zakat-now {
+        margin-right: 5px;
+        width: 200px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: white;
+        border: 1px solid white;
+        background-color: var(--primary);
+        box-sizing: border-box;
+        border-radius: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
+    }
+
+    #btn-zakat-now:hover {
+        background-color: white;
+        color: var(--primary);
+        border-color: var(--primary);
+    }
+}

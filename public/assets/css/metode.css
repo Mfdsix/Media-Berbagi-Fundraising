@@ -1,0 +1,99 @@
+.method-section {
+    padding: 30px 25px;
+}
+
+.method-section .section-title {
+    margin-bottom: 30px;
+}
+
+.method-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.method-box .method-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.method-box .method-balance-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.method-box img {
+    width: 75px;
+    margin-right: 25px;
+}
+
+.method-box .method-name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 141.02%;
+    /* identical to box height, or 23px */
+    text-align: center;
+    color: #363636;
+}
+
+.method-box .method-balance-group .method-balance {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 141.02%;
+    /* identical to box height, or 20px */
+    text-align: center;
+    color: #A4A4A4;
+    margin-top: -5px;
+}
+
+.method-box .method-check {
+    justify-self: flex-end;
+    border-radius: 50%;
+}
+
+.method-box:last-child {
+    border-bottom: 1px solid #F1F1F1;
+    padding-bottom: 15px;
+}
+
+.method-check {
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #4953BE;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.method-check:checked {
+    border: 1px solid #fff;
+    background-color: #4953BE;
+}
+
+
+/* .method-check:checked::before {
+    content: url(../img/global/tick-light.svg);
+    text-align: center;
+    color: #fff;
+} */
+
+.method-check:active {
+    border: 2px solid #4953BE;
+}
