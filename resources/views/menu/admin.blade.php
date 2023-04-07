@@ -318,12 +318,12 @@
             <span>Pengaturan</span>
         </a>
     </li>
-    <li>
+    {{-- <li>
         <a class="@if(request()->is('*/update-software')) active @endif" href="{{ url('/admin/update-software') }}">
             <i class='bx bx-refresh'></i>
             <span>Update Software</span>
         </a>
-    </li>
+    </li> --}}
     {{-- <li>
         <a class="@if(request()->is('*/themes')) active @endif" href="{{ url('/admin/themes') }}">
             <i class='bx bx-layout'></i>

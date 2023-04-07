@@ -50,7 +50,7 @@
     </div>
     @endif
 
-        @if ( version_compare(exec('git tag'), $current, '<') )
+        {{-- @if ( version_compare(exec('git tag'), $current, '<') )
         <div class="col-md-12">
             <div class="box" style="background-color: #ffc800cf!important">
                 <div class="box-body d-flex justify-content-between">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        @endif
+        @endif --}}
     <div class="col-md-7">
         <div class="box box-manage">
             <div class="box-body d-flex pd-7 pb-0">
