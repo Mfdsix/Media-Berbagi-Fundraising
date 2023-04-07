@@ -5,7 +5,6 @@
 /storage/app/public
 /public/assets/css/variable.css
 /public/assets/images/images/sheep.svg
-/vendor
 .env
 .env.backup
 .phpunit.result.cache
