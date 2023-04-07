@@ -21,7 +21,6 @@ resources/views/themes/*
 themes/*
 database/seeds/ProjecCategoriesSeeder.php
 database/seeds/ProjectSeeder.php
-/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
