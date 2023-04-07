@@ -26,15 +26,17 @@ class HomeController extends PaymentController
         // $start = microtime(true);
 
         // get all payment data
-        $payments = CacheRedis('payment_channel', function() {
-            $payments = $this->getPaymentMethods();
-            return $payments;
-        }, true, true);
+        $payments = $this->getPaymentMethods();
+        // $payments = CacheRedis('payment_channel', function() {
+        //     $payments = $this->getPaymentMethods();
+        //     return $payments;
+        // }, true, true);
 
         // get all bank data
-        $banks = CacheRedis('banks', function() {
-            return Bank::all();
-        });
+        $banks = Bank::all();
+        // $banks = CacheRedis('banks', function () {
+        //     return Bank::all();
+        // });
 
         foreach ($banks as $key => $value) {
             $value->request_code = 'bank-' . $value->id . '-' . $value->bank_name;
@@ -43,41 +45,51 @@ class HomeController extends PaymentController
         $payments['bk'] = $banks;
 
         // get all  blogs
-        $blogs = CacheRedis('blogs', function() {
-            return Blog::orderBy('id', 'DESC')
+        $blogs = Blog::orderBy('id', 'DESC')
             ->limit(5)
             ->get();
-        });
+        // $blogs = CacheRedis('blogs', function () {
+        //     return Blog::orderBy('id', 'DESC')
+        //         ->limit(5)
+        //         ->get();
+        // });
 
         // get all categories
-        $categories = CacheRedis('project_categories', function() {
-            return ProjectCategory::orderBy('order_number')
+        $categories = ProjectCategory::orderBy('order_number')
             ->get();
-        });
+        // $categories = CacheRedis('project_categories', function () {
+        //     return ProjectCategory::orderBy('order_number')
+        //         ->get();
+        // });
 
         // get all partner
-        $partners = CacheRedis('partners', function() {
-            return Partner::get();
-        });
+        $partners = Partner::get();
+        // $partners = CacheRedis('partners', function () {
+        //     return Partner::get();
+        // });
 
         // get all slider
-        $sliders = CacheRedis('sliders', function() {
-            return Slider::get();
-        });
+        $sliders = Slider::get();
+        // $sliders = CacheRedis('sliders', function () {
+        //     return Slider::get();
+        // });
 
         // get all activities
-        $activities = CacheRedis('activities', function() {
-            return Activity::orderBy('id', 'DESC')
+        $activities = Activity::orderBy('id', 'DESC')
             ->limit(5)
             ->get();
-        });
+        // $activities = CacheRedis('activities', function () {
+        //     return Activity::orderBy('id', 'DESC')
+        //         ->limit(5)
+        //         ->get();
+        // });
 
         // get project
         // $projects = CacheRedis('projects', function(){
-            $projects = Project::where(function ($q) {
-                $q->where('date_target', null)
-                    ->orWhere('date_target', '>=', now());
-            })
+        $projects = Project::where(function ($q) {
+            $q->where('date_target', null)
+                ->orWhere('date_target', '>=', now());
+        })
             ->with(['category'])
             ->where('status', 1)
             ->where('is_hidden', 0)
@@ -88,10 +100,10 @@ class HomeController extends PaymentController
 
         // get project new release
         // $newReleases = CacheRedis('projects', function() {
-            $newReleases = Project::where(function ($q) {
-                $q->where('date_target', null)
-                    ->orWhere('date_target', '>=', now());
-            })
+        $newReleases = Project::where(function ($q) {
+            $q->where('date_target', null)
+                ->orWhere('date_target', '>=', now());
+        })
             ->with(['category'])
             ->where('status', 1)
             ->where('is_hidden', 0)
@@ -164,16 +176,16 @@ class HomeController extends PaymentController
                 ->first();
         }
 
-        if($this->theme) {
+        if ($this->theme) {
             $theme = $this->theme->theme;
-            if(property_exists($this->theme->script, 'index')) {
+            if (property_exists($this->theme->script, 'index')) {
                 $script = $this->theme->script->index;
-                $theme = "themes/".$theme.'/'.$script;
+                $theme = "themes/" . $theme . '/' . $script;
                 $theme = str_replace(".blade.php", "", $theme);
-            }else{
+            } else {
                 $theme = "index";
             }
-        }else{
+        } else {
             $theme = "index";
         }
 
@@ -192,17 +204,18 @@ class HomeController extends PaymentController
         ]);
     }
 
-    public function countDonation($id, $referral = null){
+    public function countDonation($id, $referral = null)
+    {
         $donations = DB::table('fundings')
-        ->join('projects','fundings.project_id', 'projects.id')
-        ->when($referral, function ($q) use ($referral) {
-            return $q->where('fundings.referral_id', $referral);
-        })
-        ->where('fundings.status', 'paid')
-        ->where('projects.id', $id)
-        ->selectRaw('SUM(fundings.nominal) as donation')
-        ->pluck('fundings.donation')
-        ->first();
+            ->join('projects', 'fundings.project_id', 'projects.id')
+            ->when($referral, function ($q) use ($referral) {
+                return $q->where('fundings.referral_id', $referral);
+            })
+            ->where('fundings.status', 'paid')
+            ->where('projects.id', $id)
+            ->selectRaw('SUM(fundings.nominal) as donation')
+            ->pluck('fundings.donation')
+            ->first();
 
         if ($donations == null) {
             return 0;
@@ -279,5 +292,4 @@ class HomeController extends PaymentController
             'projects' => $projects,
         ]);
     }
-
 }
