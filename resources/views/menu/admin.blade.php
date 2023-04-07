@@ -265,12 +265,12 @@
             </li>
         </ul>
     </li>
-    <li>
+    {{-- <li>
         <a class="@if(request()->is('*/mediaberbagi')) active @endif" href="{{ url('/admin/mediaberbagi') }}">
             <i class='bx bxs-cog'></i>
             <span>Mediaberbagi Setting</span>
         </a>
-    </li>
+    </li> --}}
     <li>
         <a class="@if(request()->is('*/data-usage')) active @endif" href="{{ url('/admin/data-usage') }}">
             <i class='bx bxs-save'></i>
