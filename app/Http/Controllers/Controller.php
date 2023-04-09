@@ -65,12 +65,13 @@ class Controller extends BaseController
     ];
     public $theme = null;
 
-    public function getWithCache($model, $name) {
-        $count = Redis::get('_'.$name);
-        if($model->count() != $count) {
-            Redis::set($name, json_encode($model));
-            Redis::set('_'.$name, $model->count());
-        }else{
+    public function getWithCache($model, $name)
+    {
+        $count = Redis::get('_' . $name);
+        if ($model->count() != $count) {
+            // Redis::set($name, json_encode($model));
+            // Redis::set('_'.$name, $model->count());
+        } else {
             $model = json_decode(Redis::get($name));
         }
         return $model;
@@ -81,14 +82,14 @@ class Controller extends BaseController
         $web_set = Setting::find(1);
         $meta = new \stdClass();
         $meta->title = envdb('APP_NAME');
-        $meta->description = envdb('APP_NAME')."- Bayar Donasi Waqaf Infaq dan Qurban dengan mudah dimana saja dan kapan saja";
+        $meta->description = envdb('APP_NAME') . "- Bayar Donasi Waqaf Infaq dan Qurban dengan mudah dimana saja dan kapan saja";
         $meta->type = "website";
         $meta->url = url('/');
-        $meta->icon = asset('storage/'.$web_set->path_icon);
+        $meta->icon = asset('storage/' . $web_set->path_icon);
 
-        if($web_set->path_logo){
+        if ($web_set->path_logo) {
             $meta->image = asset('storage/' . $web_set->path_logo);
-        }else{
+        } else {
             $meta->image = asset('assets/media-berbagi/assets/images/website/logo-media-berbagi.png');
         }
 
@@ -99,9 +100,10 @@ class Controller extends BaseController
         View::share('meta', $meta);
     }
 
-    public function loadTheme() {
+    public function loadTheme()
+    {
         $theme = Theme::where("active", true)->first();
-        if($theme != null){
+        if ($theme != null) {
             $this->theme = $theme;
             $this->theme->script = json_decode($theme->script);
         }
@@ -149,11 +151,11 @@ class Controller extends BaseController
 
     public static function date_to_idn($date)
     {
-        if($date != null) {
+        if ($date != null) {
             $explode = explode('-', $date);
             $month = self::get_idn_month($explode[1]);
             return $explode[2] . ' ' . $month . ' ' . $explode[0];
-        }else{
+        } else {
             return "-";
         }
     }
@@ -288,7 +290,6 @@ class Controller extends BaseController
 
                 $accounts['wallet'] = $wallet;
             }
-
         } else {
             $accounts = $banks;
         }
@@ -332,7 +333,7 @@ class Controller extends BaseController
             $stringBody = (string) $body;
             $output = json_decode($stringBody);
             return $output;
-        }else{
+        } else {
             return null;
         }
     }
@@ -472,7 +473,6 @@ class Controller extends BaseController
             abort(404);
         }
         return $payment;
-
     }
 
     public function callback(Request $data)
@@ -550,7 +550,6 @@ class Controller extends BaseController
                 } else {
                     abort(500);
                 }
-
             } else {
                 abort(500);
             }
@@ -564,73 +563,73 @@ class Controller extends BaseController
     //     "funding" => $fund,
     // ]);
 
-    public function templateMessage($data = []) {
+    public function templateMessage($data = [])
+    {
         $setting = Setting::whereIn('key', ['donation_reminder', 'donation_thanks'])
             ->pluck('value', 'key');
         $reminder = $setting['donation_reminder'];
         $thanks = $setting['donation_thanks'];
 
-        if($data["type"] == "reminder") {
+        if ($data["type"] == "reminder") {
 
             $funding = $data["funding"];
 
-            $inv = "INV-" . date('ymd').sprintf("%05d", $funding->id);
-            if($funding->project == null) {
-                $title = "Program instan ".$funding->fund_type;
-            }else{
+            $inv = "INV-" . date('ymd') . sprintf("%05d", $funding->id);
+            if ($funding->project == null) {
+                $title = "Program instan " . $funding->fund_type;
+            } else {
                 $title = $funding->project->title;
             }
 
             $reminder = str_replace("<<app_name>>", envdb("APP_NAME"), $reminder);
             $reminder = str_replace("<<invoice_number>>", $inv, $reminder);
             $reminder = str_replace("<<campaign_name>>", $title, $reminder);
-            $reminder = str_replace("<<donation_amount>>", "Rp".$funding->nominal, $reminder);
+            $reminder = str_replace("<<donation_amount>>", "Rp" . $funding->nominal, $reminder);
             $reminder = str_replace("<<payment_method>>", $funding->payment_method, $reminder);
             $reminder = str_replace("<<time_limit>>", $funding->time_limit, $reminder);
             $reminder = str_replace("<<donature_name>>", $funding->donature_name, $reminder);
-            $reminder = str_replace("<<payment_link>>", url("donation/".$inv), $reminder);
-            if($funding->payment_type == "virtualaccount") {
+            $reminder = str_replace("<<payment_link>>", url("donation/" . $inv), $reminder);
+            if ($funding->payment_type == "virtualaccount") {
                 $reminder = str_replace("<<virtual_account>>", $funding->reference, $reminder);
-            }else{
+            } else {
                 $reminder = str_replace("<<virtual_account>>", "", $reminder);
             }
 
-            if($funding->donature_phone != null) {
-                self::sendWa($funding->donature_phone,$reminder);
+            if ($funding->donature_phone != null) {
+                self::sendWa($funding->donature_phone, $reminder);
             }
-            if($funding->donature_email != null) {
+            if ($funding->donature_email != null) {
                 $html = new \stdClass();
                 $html->title = "Reminder pembayaran donasi";
-                $html->content = str_replace("\n","<br/>",$reminder);
+                $html->content = str_replace("\n", "<br/>", $reminder);
                 Mail::to($funding->donature_email)->send(new NotifMail($html));
             }
-
-        }else{
+        } else {
             $funding = $data["funding"];
 
-            $inv = "INV-" . date('ymd').sprintf("%05d", $funding->id);
-            if(isset($funding->project)) {
+            $inv = "INV-" . date('ymd') . sprintf("%05d", $funding->id);
+            if (isset($funding->project)) {
                 $title = $funding->project->title;
-            }else{
-                $title = "Program instan ".$funding->fund_type;
+            } else {
+                $title = "Program instan " . $funding->fund_type;
             }
 
             $thanks = str_replace("<<app_name>>", envdb("APP_NAME"), $thanks);
             $thanks = str_replace("<<invoice_number>>", $inv, $thanks);
             $thanks = str_replace("<<campaign_name>>", $title, $thanks);
-            $thanks = str_replace("<<donation_amount>>", "Rp".$funding->nominal, $thanks);
+            $thanks = str_replace("<<donation_amount>>", "Rp" . $funding->nominal, $thanks);
             $thanks = str_replace("<<payment_method>>", $funding->payment_method, $thanks);
             $thanks = str_replace("<<time_limit>>", $funding->time_limit, $thanks);
             $thanks = str_replace("<<donature_name>>", $funding->donature_name, $thanks);
-            $thanks = str_replace("<<payment_link>>", url("donation/".$inv), $thanks);
+            $thanks = str_replace("<<payment_link>>", url("donation/" . $inv), $thanks);
 
-            if($funding->donature_phone != null) {
-                self::sendWa($funding->donature_phone,$thanks);
+            if ($funding->donature_phone != null) {
+                self::sendWa($funding->donature_phone, $thanks);
             }
-            if($funding->donature_email != null) {
+            if ($funding->donature_email != null) {
                 $html = new \stdClass();
                 $html->title = "Pembayaran donasi berhasil";
-                $html->content = str_replace("\n","<br/>",$thanks);
+                $html->content = str_replace("\n", "<br/>", $thanks);
                 Mail::to($funding->donature_email)->send(new NotifMail($html));
             }
         }
@@ -658,9 +657,9 @@ class Controller extends BaseController
     {
         $checkSpace = explode(' ', $name);
         if (count($checkSpace) == 1) {
-            if(strlen($name) == 1){
+            if (strlen($name) == 1) {
                 return $name;
-            }else{
+            } else {
                 return strtoupper($name[0] . $name[1]);
             }
         } else {
@@ -739,5 +738,4 @@ class Controller extends BaseController
 
         return str_replace(".", "", $price);
     }
-
 }

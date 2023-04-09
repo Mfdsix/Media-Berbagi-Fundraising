@@ -58,9 +58,9 @@ class SliderController extends Controller
             'path_slider' => $filename,
         ]);
 
-        $prefix = str_replace('base64:','',env('APP_KEY'));
-        Redis::del($prefix.'sliders');
-        Redis::del($prefix.'_sliders');
+        $prefix = str_replace('base64:', '', env('APP_KEY'));
+        // Redis::del($prefix.'sliders');
+        // Redis::del($prefix.'_sliders');
 
         return redirect('admin/slider')->with([
             'success' => 'Berhasil Menambahkan Slider',
@@ -111,9 +111,9 @@ class SliderController extends Controller
             'path_slider' => $filename,
         ]);
 
-        $prefix = str_replace('base64:','',env('APP_KEY'));
-        Redis::del($prefix.'sliders');
-        Redis::del($prefix.'_sliders');
+        $prefix = str_replace('base64:', '', env('APP_KEY'));
+        // Redis::del($prefix . 'sliders');
+        // Redis::del($prefix . '_sliders');
 
         return redirect('admin/slider')->with([
             'success' => 'Berhasil Mengedit Gambar Slider',

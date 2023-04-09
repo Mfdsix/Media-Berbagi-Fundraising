@@ -122,8 +122,8 @@ class SettingController extends Controller
 
     public function savePaymentGateway(Request $request)
     {
-        $prefix = str_replace('base64:','',env('APP_KEY'));
-        Redis::del($prefix.'payment_channel');
+        $prefix = str_replace('base64:', '', env('APP_KEY'));
+        // Redis::del($prefix.'payment_channel');
 
         $request->validate([
             'vendor' => 'required',
