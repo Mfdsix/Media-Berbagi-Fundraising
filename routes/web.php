@@ -11,6 +11,18 @@
 |
  */
 
+use Illuminate\Support\Facades\Artisan;
+
+// Route::get('/symlink', function () {
+//     $target = '/home/u1564948/donasi.lazassalaamtimika.org/storage/app/public';
+//     $shortcut = '/home/u1564948/public_html/donasi/storage';
+//     symlink($target, $shortcut);
+//     Artisan::call('dump-autoload');
+//     Artisan::call('cache:clear');
+//     Artisan::call('route:clear');
+//     Artisan::call('config:clear');
+// });
+
 Route::post('/payment_notification/{type}', 'PaymentController@paymentCallback');
 
 Route::get('/debug-sentry', function () {
@@ -268,7 +280,6 @@ Route::group(['middleware' => ['auth']], function () {
         // billing
         Route::get('/billing', 'BillingController@index');
         Route::post('/billing', 'BillingController@payment');
-
     });
 
     Route::group(['prefix' => 'fundraiser', 'middleware' => 'is.role:fundraiser', 'namespace' => 'Fundraiser'], function () {
