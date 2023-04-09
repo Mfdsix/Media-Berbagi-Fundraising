@@ -13,15 +13,12 @@
 
 use Illuminate\Support\Facades\Artisan;
 
-// Route::get('/symlink', function () {
-//     $target = '/home/u1564948/donasi.lazassalaamtimika.org/storage/app/public';
-//     $shortcut = '/home/u1564948/public_html/donasi/storage';
-//     symlink($target, $shortcut);
-//     Artisan::call('dump-autoload');
-//     Artisan::call('cache:clear');
-//     Artisan::call('route:clear');
-//     Artisan::call('config:clear');
-// });
+Route::get('/symlink', function () {
+    Artisan::call('storage:link');
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('config:clear');
+});
 
 Route::post('/payment_notification/{type}', 'PaymentController@paymentCallback');
 
